@@ -12,12 +12,11 @@ nav {
     align-items: center;
     padding: 15px 20%;
     background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    
-    /* This keeps the nav at the top while scrolling */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
     position: sticky;
     top: 0;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .logo {
@@ -31,7 +30,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 30px; /* Modern way to space items */
+    gap: 30px;
 }
 
 nav ul li a {
@@ -44,39 +43,27 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #d9534f; /* Matches your blog's accent color */
+    color: #d9534f;
 }
 
 
-/* Destination Page Styles */
+/* Destination Page */
 .destination-page {
     padding-bottom: 80px;
 }
 
-.dest-hero {
+.dest-intro {
     text-align: center;
     background: #f4f4f4;
     padding: 80px 10%;
     margin-bottom: 50px;
 }
 
-.dest-hero h1 { font-size: 3.5rem; margin-bottom: 15px; }
-
-.search-box {
-    margin-top: 30px;
+.dest-intro h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
 }
 
-.search-box input {
-    padding: 15px 25px;
-    width: 100%;
-    max-width: 500px;
-    border: 1px solid #ddd;
-    border-radius: 30px;
-    font-size: 1rem;
-    outline: none;
-}
-
-/* Destination Cards */
 .dest-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -90,7 +77,7 @@ nav ul li a:hover {
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
 
@@ -103,19 +90,6 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     position: relative;
-}
-
-.region-tag {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: rgba(255,255,255,0.9);
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #d9534f;
 }
 
 .dest-info {
@@ -154,7 +128,7 @@ nav ul li a:hover {
     font-size: 0.9rem;
 }
 
-/* Mobile Tweak */
-@media (max-width: 480px) {
-    .dest-hero h1 { font-size: 2.5rem; }
+#btn:hover {
+    color: #d9534f;
+    transition: 0.2s;
 }
