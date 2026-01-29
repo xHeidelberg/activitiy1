@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20%;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    
+    /* This keeps the nav at the top while scrolling */
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* Modern way to space items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d9534f; /* Matches your blog's accent color */
+}
+
+
+/* Destination Page Styles */
+.destination-page {
+    padding-bottom: 80px;
+}
+
+.dest-hero {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 80px 10%;
+    margin-bottom: 50px;
+}
+
+.dest-hero h1 { font-size: 3.5rem; margin-bottom: 15px; }
+
+.search-box {
+    margin-top: 30px;
+}
+
+.search-box input {
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Destination Cards */
+.dest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.dest-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.dest-card:hover {
+    transform: translateY(-10px);
+}
+
+.dest-img {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.region-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255,255,255,0.9);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d9534f;
+}
+
+.dest-info {
+    padding: 25px;
+}
+
+.dest-info h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.dest-info p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.dest-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.dest-meta span {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.dest-meta a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Mobile Tweak */
+@media (max-width: 480px) {
+    .dest-hero h1 { font-size: 2.5rem; }
+}
