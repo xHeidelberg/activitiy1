@@ -16,17 +16,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20%;
+    padding: 25px 20%;
     background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color: #333;
     text-transform: uppercase;
@@ -35,7 +34,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 30px; /* Modern way to space items */
+    gap: 30px;
 }
 
 nav ul li a {
@@ -47,15 +46,14 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-/* Hover effect */
 nav ul li a:hover {
-    color: #d9534f; /* Matches your blog's accent color */
+    color: #d9534f;
 }
-/* Hero Section */
+
 .bannerMain {
     height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                url('../images/back1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('../images/back1.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -66,7 +64,10 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.bannerMain h1 { font-size: 3rem; margin-bottom: 10px; }
+.bannerMain h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
 
 /* Blog Grid */
 .post-grid {
@@ -79,12 +80,15 @@ nav ul li a:hover {
 .post-card {
     background: white;
     border-radius: 8px;
+    cursor: pointer;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
-.post-card:hover { transform: translateY(-5px); }
+.post-card:hover {
+    transform: translateY(-5px);
+}
 
 .post-image {
     height: 200px;
@@ -96,14 +100,24 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-.post-content span { font-size: 0.8rem; color: #888; }
-.post-content h2 { margin: 10px 0; font-size: 1.25rem; }
-.read-more { color: #d9534f; text-decoration: none; font-weight: bold; }
+.post-content span {
+    font-size: 0.8rem;
+    color: #888;
+}
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 40px;
-    background: #333;
-    color: white;
+.post-content h2 {
+    margin: 10px 0;
+    font-size: 1.25rem;
+}
+
+.read-more {
+    color: #d9534f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.23ms;
+}
+
+.read-more:hover {
+    color: black;
+    transition: 0.23ms;
 }
